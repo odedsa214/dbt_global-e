@@ -1,0 +1,1 @@
+select * from datalake.globale_dbo.orders

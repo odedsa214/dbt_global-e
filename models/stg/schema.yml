@@ -1,0 +1,216 @@
+version: 2
+
+models:
+
+    - name: stg_dim_country
+      description: "All GlobalE countries"
+      columns:
+          - name: country_id
+            description: "The PK for this table"
+            tests:
+                - unique
+                - not_null
+          - name: country_name
+            tests:
+                - not_null
+          - name: country_code
+            description: The two-letter ISO code representing the country.
+          - name: country_code_3
+            description: The three-letter ISO code representing the country.
+          - name: default_currency_id
+            description: The identifier for the default currency used in the country.
+          - name: dw_insert_date
+            description: The timestamp when the record was inserted into the data warehouse.
+          - name: dw_update_date
+            description: The timestamp when the record was last updated in the data warehouse.
+          - name: ri_ind
+            description: Indicator for regional integration.
+          - name: geographicalregion
+            description: The geographical region to which the country belongs.
+          - name: businessregion
+            description: The business region to which the country belongs.
+          - name: iseuropeanunion
+            description: Indicates whether the country is part of the European Union.
+          - name: googleanalyticscountryname
+            description: The country name as used in Google Analytics.
+          - name: iseau
+            description: Boolean indicating if the country is in the European Union.
+          - name: taxcalculationruleid
+            description: The identifier for the tax calculation rule applicable to the country.
+    - name: stg_dim_currency
+      description: "All GlobalE currencies"
+      columns:
+          - name: Currency_Id
+            description: "The PK for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_dim_date
+      description: "All dates between 2018-01-01 and 2035-12-31"
+      columns:
+          - name: date
+            description: "The PK for this table"
+            tests:
+                - unique
+                - not_null        
+
+          - name: date_code
+            description: An integer representation of the date in YYYYMMDD format.
+          - name: year_month_num
+            description: An integer representation of the year and month in YYYYMM format.
+          - name: previous_year_month_num
+            description: An integer representation of the previous year and month in YYYYMM format.
+          - name: year_month
+            description: A string representation of the year and month in YYYY-MON format.
+          - name: previous_year_month
+            description: A string representation of the previous year and month in YYYY-MON format.
+          - name: previous_year
+            description: A string representation of the previous year.
+          - name: quarter
+            description: The quarter of the year, represented as 'Q' followed by the quarter number.
+          - name: year_quarter
+            description: A string representation of the year and quarter in YYYY-Q format.
+          - name: first_day_of_week
+            description: The date of the first day of the week for the given date.
+          - name: first_day_of_month
+            description: The date of the first day of the month for the given date.
+          - name: first_day_of_quarter
+            description: The date of the first day of the quarter for the given date.
+          - name: first_day_of_year
+            description: The date of the first day of the year for the given date.
+          - name: year
+            description: The year of the date.
+          - name: week_of_year
+            description: A string representation of the week of the year, formatted as 'WXX-YYYY'.
+          - name: day_name
+            description: The name of the day of the week.
+          - name: month_name
+            description: The name of the month.
+          - name: day_of_week_number
+            description: The numeric representation of the day of the week, where 1 is Sunday and 7 is Saturday.
+          - name: day_of_month
+            description: The day of the month as a number.
+            
+    - name: stg_dim_merchants
+      description: "All GlobalE merchants"
+      columns:
+          - name: merchantid
+            description: "The PK for this table"
+            tests:
+                - unique
+                - not_null                            
+          - name: dealid
+            description: Identifier for the deal associated with the merchant.
+          - name: merchant
+            description: The name of the merchant.
+          - name: merchantdbname
+            description: The database name of the merchant.
+          - name: merchantname
+            description: The official name of the merchant.
+          - name: merchantnameforreports
+            description: The name of the merchant used in reports.
+          - name: calendarid
+            description: Identifier for the calendar associated with the merchant.
+          - name: isactive
+            description: Indicates whether the merchant is currently active.
+          - name: merchantcurrencyid
+            description: Identifier for the currency used by the merchant.
+          - name: merchantcurrencycode
+            description: The currency code used by the merchant.
+          - name: merchantcountryid
+            description: Identifier for the country where the merchant is located.
+          - name: merchantcountry
+            description: The country where the merchant is located.
+          - name: pro/enterprise
+            description: Indicates whether the merchant is a pro or enterprise level.
+          - name: golivedate
+            description: The date when the merchant went live.
+          - name: accountmanager
+            description: The account manager responsible for the merchant.
+          - name: vertical
+            description: The business vertical the merchant operates in.
+          - name: typeofbusiness
+            description: The type of business the merchant is involved in.
+          - name: dwhinsertdate
+            description: The timestamp when the record was inserted into the data warehouse.
+          - name: apiplatformtypeid
+            description: Identifier for the API platform type used by the merchant.
+          - name: apiplatformtype
+            description: The type of API platform used by the merchant.
+          - name: browsingplatformtypeid
+            description: Identifier for the browsing platform type used by the merchant.
+          - name: browsingplatformtype
+            description: The type of browsing platform used by the merchant.
+          - name: partner
+            description: The partner associated with the merchant.
+          - name: original merchant type
+            description: The original type of the merchant.
+          - name: merchanttypeidchgdate
+            description: The date when the merchant type ID was changed.
+          - name: merchantsource
+            description: The source from which the merchant information was obtained.
+          - name: flowmerchantid
+            description: Identifier for the flow merchant.
+          - name: merchantnameforqv
+            description: The name of the merchant used for QV.
+          - name: shouldbeinqv
+            description: Indicates whether the merchant should be included in QV.
+          - name: businessunit
+            description: The business unit the merchant belongs to.
+          - name: isluxury
+            description: Indicates whether the merchant is classified as luxury.
+          - name: isreplatformed
+            description: Indicates whether the merchant has been replatformed.
+          - name: replatformdate
+            description: The date when the merchant was replatformed.
+          - name: bfmerchantid
+            description: Identifier for the border-free merchant.
+          - name: mcc_code_adyenapi
+            description: The MCC code used in the Adyen API for the merchant.
+          - name: mcc_category_adyenapi
+            description: The MCC category used in the Adyen API for the merchant.
+          - name: merchantgolivedate
+            description: The date when the merchant went live.
+          - name: merchantlastorderdate
+            description: The date of the merchant's last order.
+          - name: siteurl
+            description: The URL of the merchant's site.
+          - name: isborderfreemerchantflag
+            description: Flag indicating whether the merchant is border-free.
+            
+    - name: stg_dim_order_statuses
+      description: "define table for order statuses"
+      columns:
+          - name: Order_Status_Id
+            description: "The PK for this table"
+            tests:
+                - unique
+                - not_null      
+
+    - name: stg_dim_hubs
+      description: "All GlobalE hubs"
+      columns:
+          - name: hubid
+            description: "The PK for this table"
+            tests:
+                - unique
+                - not_null                  
+
+    - name: stg_dim_shippingmethods
+      description: "All GlobalE shipping methods"
+      columns:
+          - name: ShippingMethodId
+            description: "The PK for this table"
+            tests:
+                - unique
+                - not_null                             
+
+    - name: stg_dim_order_payments_methods
+      description: "All GlobalE order payments methods"
+      columns:
+          - name: Payment_Method_Id
+            description: "The PK for this table"
+            tests:
+                - unique
+                - not_null                      

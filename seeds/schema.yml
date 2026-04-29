@@ -1,0 +1,13 @@
+seeds:
+  - name: stg_mgmt_countryregionmapping
+    columns:
+      - name: CountryName
+        tests:
+          - unique
+          - not_null
+      - name: geographicalregion
+        tests:
+          - not_null
+      - name: businessregion
+        tests:
+          - not_null

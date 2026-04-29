@@ -1,1 +1,0 @@
-select top 100 * from datalake.globale_dbo.orders
