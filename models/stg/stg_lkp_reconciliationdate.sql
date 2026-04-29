@@ -1,3 +1,8 @@
+{{ config(
+    materialized="incremental",
+    incremental_strategy="append",
+) }}
+
 WITH MerchantReconciliationOrderStatuses AS (
 SELECT DISTINCT MerchantId, ReconciliationDateStatusId
 FROM (
