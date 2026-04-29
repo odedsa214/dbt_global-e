@@ -2,14 +2,14 @@ WITH MerchantReconciliationOrderStatuses AS (
 SELECT DISTINCT MerchantId, ReconciliationDateStatusId
 FROM (
 SELECT rg.MerchantId, mf.ReconciliationDateStatusId
-  FROM datalake.GLOBALE_DBO.MerchantReportGroups rg
-  INNER JOIN datalake.GLOBALE_DBO.MERCHANTFEES mf ON rg.ReportGroupId = mf.ReportGroupId
+  FROM shared_prod_datalake.GLOBALE_DBO.MerchantReportGroups rg
+  INNER JOIN shared_prod_datalake.GLOBALE_DBO.MERCHANTFEES mf ON rg.ReportGroupId = mf.ReportGroupId
   UNION ALL
   SELECT mf.MerchantId, mf.ReconciliationDateStatusId
-  FROM datalake.GLOBALE_DBO.MERCHANTFEES mf
+  FROM shared_prod_datalake.GLOBALE_DBO.MERCHANTFEES mf
   WHERE mf.ReportGroupId IS NULL
-  and mf.MerchantId not in (select rg.MerchantId FROM datalake.GLOBALE_DBO.MerchantReportGroups rg
-	INNER JOIN datalake.GLOBALE_DBO.MerchantFees mf
+  and mf.MerchantId not in (select rg.MerchantId FROM shared_prod_datalake.GLOBALE_DBO.MerchantReportGroups rg
+	INNER JOIN shared_prod_datalake.GLOBALE_DBO.MerchantFees mf
 	ON rg.ReportGroupId = MF.ReportGroupId)
 ))
 ,
@@ -23,12 +23,12 @@ SELECT O.OrderId,
        NULLIF(odd.ActualDispatchedtocustomer, '1900-01-01') AS ActualDispatchedtocustomer,
        NULLIF(odd.ActualDeliveredtocustomer, '1900-01-01') AS ActualDeliveredtocustomer,
        COALESCE(BSP.BespokeIndicator, 0) AS BespokeIndicator
-FROM datalake.GLOBALE_DBO.Orders O
-INNER JOIN datalake.GLOBALE_DBO.ORDERDELIVERYDETAILS odd ON O.OrderId = odd.OrderId AND odd.ParcelId IS NULL
-INNER JOIN datalake.GLOBALE_DBO.PaymentTransactions pt ON pt.PaymentTransactionId = O.ActivePaymentTransactionId
+FROM shared_prod_datalake.GLOBALE_DBO.Orders O
+INNER JOIN shared_prod_datalake.GLOBALE_DBO.ORDERDELIVERYDETAILS odd ON O.OrderId = odd.OrderId AND odd.ParcelId IS NULL
+INNER JOIN shared_prod_datalake.GLOBALE_DBO.PaymentTransactions pt ON pt.PaymentTransactionId = O.ActivePaymentTransactionId
 LEFT JOIN LATERAL( 
   SELECT MAX(1) AS BespokeIndicator
-  FROM datalake.GLOBALE_DBO.ORDERPRODUCTS OP
+  FROM shared_prod_datalake.GLOBALE_DBO.ORDERPRODUCTS OP
   WHERE OP.OrderId = O.OrderId
   AND OP.IsBackOrdered = 1
 ) BSP 
@@ -37,7 +37,7 @@ WHERE (
     OR ((O.OrderStatusId = 2)
     AND odd.ActualReceivedInHub < O.DateStatusLastUpdated))
  AND NOT EXISTS (
-     SELECT 1 FROM analytics.STG.STG_LKP_ReconciliationDate RD WHERE RD.OrderId = O.OrderId
+     SELECT 1 FROM shared_prod_analytics.STG.STG_LKP_ReconciliationDate RD WHERE RD.OrderId = O.OrderId
  ))
 
 
