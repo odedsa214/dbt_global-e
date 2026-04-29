@@ -1,4 +1,4 @@
-SELECT
+/*SELECT
     O.OrderId,
     O.OrderRecId,
     O.DateCreated,
@@ -77,3 +77,4 @@ LEFT JOIN LATERAL(
     /*) X
     WHERE X.Rown = 1*/
 ) FirstSM
+*/
