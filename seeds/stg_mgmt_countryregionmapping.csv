@@ -1,0 +1,227 @@
+COUNTRYNAME,GEOGRAPHICALREGION,BUSINESSREGION,EUROPEANUNION
+Albania,Europe,EMEA,No
+Algeria,Africa,EMEA,No
+American Samoa,Oceania,APAC,No
+Andorra,Europe,EMEA,No
+Angola,Africa,EMEA,No
+Anguilla,America,LATAM,No
+Antigua and Barbuda,America,LATAM,No
+Argentina,America,LATAM,No
+Armenia,Europe,EMEA,No
+Aruba,America,LATAM,No
+Australia,Oceania,APAC,No
+Austria,Europe,EMEA,Yes
+Azerbaijan,Europe,EMEA,No
+Bahamas,America,LATAM,No
+Bahrain,Asia,EMEA,No
+Bangladesh,Asia,EMEA,No
+Barbados,America,LATAM,No
+Belarus,Europe,EMEA,No
+Belgium,Europe,EMEA,Yes
+Belize,America,LATAM,No
+Benin,Africa,EMEA,No
+Bermuda,America,NORTH AMERICA,No
+Bhutan,Asia,EMEA,No
+Bolivia,America,LATAM,No
+"Bonaire, Saint Eustatius and Saba",America,LATAM,No
+Bosnia and Herzegovina,Europe,EMEA,No
+Botswana,Africa,EMEA,No
+Brazil,America,LATAM,No
+British Virgin Islands,America,LATAM,No
+Brunei Darussalam,Asia,EMEA,No
+Bulgaria,Europe,EMEA,Yes
+Burkina Faso,Africa,EMEA,No
+Burundi,Africa,EMEA,No
+Cambodia,Asia,EMEA,No
+Cameroon,Africa,EMEA,No
+Canada,America,NORTH AMERICA,No
+Cape Verde,Africa,EMEA,No
+Cayman Islands,America,LATAM,No
+Chad,Africa,EMEA,No
+Chile,America,LATAM,No
+China,Asia,EMEA,No
+Colombia,America,LATAM,No
+Comoros,Africa,EMEA,No
+Congo,Africa,EMEA,No
+"Congo, Democratic Republic",Africa,EMEA,No
+Cook Islands,Oceania,APAC,No
+Costa Rica,America,LATAM,No
+Cote D'Ivoire (Ivory Coast),Africa,EMEA,No
+Croatia,Europe,EMEA,Yes
+Cuba,America,LATAM,No
+Curaçao,America,LATAM,No
+Cyprus,Europe,EMEA,Yes
+Czech Republic,Europe,EMEA,Yes
+Denmark,Europe,EMEA,Yes
+Djibouti,Africa,EMEA,No
+Dominica,America,LATAM,No
+Dominican Republic,America,LATAM,No
+East Timor,Asia,EMEA,No
+Ecuador,America,LATAM,No
+Egypt,Africa,EMEA,No
+El Salvador,America,LATAM,No
+Equatorial Guinea,Africa,EMEA,No
+Eritrea,Africa,EMEA,No
+Estonia,Europe,EMEA,Yes
+Ethiopia,Africa,EMEA,No
+F.Y.R.O.M. (Macedonia),Europe,EMEA,No
+Falkland Islands (Malvinas),America,LATAM,No
+Faroe Islands,Europe,EMEA,No
+Fiji,Oceania,APAC,No
+Finland,Europe,EMEA,Yes
+France,Europe,EMEA,Yes
+French Guiana,America,LATAM,No
+French Polynesia,Oceania,APAC,No
+Gabon,Africa,EMEA,No
+Gambia,Africa,EMEA,No
+Georgia,Europe,EMEA,No
+Germany,Europe,EMEA,Yes
+Ghana,Africa,EMEA,No
+Gibraltar,Europe,EMEA,No
+Greece,Europe,EMEA,Yes
+Greenland,America,NORTH AMERICA,No
+Grenada,America,LATAM,No
+Guadeloupe,America,LATAM,No
+Guam,Oceania,APAC,No
+Guatemala,America,LATAM,No
+Guernsey,Europe,EMEA,No
+Guinea,Africa,EMEA,No
+Guinea-Bissau,Africa,EMEA,No
+Guyana,America,LATAM,No
+Haiti,America,LATAM,No
+Honduras,America,LATAM,No
+Hong Kong,Asia,EMEA,No
+Hungary,Europe,EMEA,Yes
+Iceland,Europe,EMEA,No
+India,Asia,EMEA,No
+Indonesia,Asia,EMEA,No
+Iran,Asia,EMEA,No
+Iraq,Asia,EMEA,No
+Ireland (Republic of),Europe,EMEA,Yes
+Israel,Asia,EMEA,No
+Italy,Europe,EMEA,Yes
+Jamaica,America,LATAM,No
+Japan,Asia,EMEA,No
+Jersey,Europe,EMEA,No
+Jordan,Asia,EMEA,No
+Kazakhstan,Europe,EMEA,No
+Kenya,Africa,EMEA,No
+Kiribati,Oceania,APAC,No
+Korea (South),Asia,EMEA,No
+Kuwait,Asia,EMEA,No
+Kyrgyzstan,Asia,EMEA,No
+Laos,Asia,EMEA,No
+Latvia,Europe,EMEA,Yes
+Lebanon,Asia,EMEA,No
+Lesotho,Africa,EMEA,No
+Liberia,Africa,EMEA,No
+Libya,Africa,EMEA,No
+Liechtenstein,Europe,EMEA,No
+Lithuania,Europe,EMEA,Yes
+Luxembourg,Europe,EMEA,Yes
+Macau,Asia,EMEA,No
+Madagascar,Africa,EMEA,No
+Malawi,Africa,EMEA,No
+Malaysia,Asia,EMEA,No
+Maldives,Asia,EMEA,No
+Mali,Africa,EMEA,No
+Malta,Europe,EMEA,Yes
+Marshall Islands,Oceania,APAC,No
+Martinique,America,LATAM,No
+Mauritania,Africa,EMEA,No
+Mauritius,Africa,EMEA,No
+Mayotte,Africa,EMEA,No
+Mexico,America,LATAM,No
+Micronesia,Oceania,APAC,No
+Moldova,Europe,EMEA,No
+Monaco,Europe,EMEA,No
+Mongolia,Asia,EMEA,No
+Montenegro,Europe,EMEA,No
+Montserrat,America,LATAM,No
+Morocco,Africa,EMEA,No
+Mozambique,Africa,EMEA,No
+Myanmar,Asia,EMEA,No
+Namibia,Africa,EMEA,No
+Nauru,Oceania,APAC,No
+Nepal,Asia,EMEA,No
+Netherlands,Europe,EMEA,Yes
+Netherlands Antilles,America,LATAM,No
+New Caledonia,Oceania,APAC,No
+New Zealand,Oceania,APAC,No
+Nicaragua,America,LATAM,No
+Niger,Africa,EMEA,No
+Nigeria,Africa,EMEA,No
+Niue,Oceania,APAC,No
+Northern Mariana Islands,Oceania,APAC,No
+Norway,Europe,EMEA,No
+Oman,Asia,EMEA,No
+Pakistan,Asia,EMEA,No
+Palau,Oceania,APAC,No
+Panama,America,LATAM,No
+Papua New Guinea,Oceania,APAC,No
+Paraguay,America,LATAM,No
+Peru,America,LATAM,No
+Philippines,Asia,EMEA,No
+Poland,Europe,EMEA,Yes
+Portugal,Europe,EMEA,Yes
+Puerto Rico,America,LATAM,No
+Qatar,Asia,EMEA,No
+Reunion,Africa,EMEA,No
+Romania,Europe,EMEA,Yes
+Russia,Europe,EMEA,No
+Rwanda,Africa,EMEA,No
+Saint Kitts and Nevis,America,LATAM,No
+Saint Lucia,America,LATAM,No
+Saint Vincent & the Grenadines,America,LATAM,No
+Samoa,Oceania,APAC,No
+San Marino,Europe,EMEA,No
+Sao Tome and Principe,Africa,EMEA,No
+Saudi Arabia,Asia,EMEA,No
+Senegal,Africa,EMEA,No
+Serbia,Europe,EMEA,No
+Seychelles,Africa,EMEA,No
+Sierra Leone,Africa,EMEA,No
+Singapore,Asia,EMEA,No
+Sint Maarten,America,LATAM,No
+Slovak Republic,Europe,EMEA,Yes
+Slovenia,Europe,EMEA,Yes
+Solomon Islands,Oceania,APAC,No
+Somalia,Africa,EMEA,No
+South Africa,Africa,EMEA,No
+Spain,Europe,EMEA,Yes
+Sri Lanka,Asia,EMEA,No
+St Barthelemy,America,LATAM,No
+St Martin,America,LATAM,No
+Sudan,Africa,EMEA,No
+Suriname,America,LATAM,No
+Swaziland,Africa,EMEA,No
+Sweden,Europe,EMEA,Yes
+Switzerland,Europe,EMEA,No
+Syria,Asia,EMEA,No
+Taiwan,Asia,EMEA,No
+Tajikistan,Asia,EMEA,No
+Tanzania,Africa,EMEA,No
+Thailand,Asia,EMEA,No
+Togo,Africa,EMEA,No
+Tonga,Oceania,APAC,No
+Trinidad and Tobago,America,LATAM,No
+Tunisia,Africa,EMEA,No
+Turkey,Europe,EMEA,No
+Turkmenistan,Asia,EMEA,No
+Turks and Caicos Islands,America,LATAM,No
+Tuvalu,Oceania,APAC,No
+Uganda,Africa,EMEA,No
+Ukraine,Europe,EMEA,No
+United Arab Emirates,Asia,EMEA,No
+United Kingdom,Europe,EMEA,Yes
+United States,America,NORTH AMERICA,No
+Uruguay,America,LATAM,No
+Uzbekistan,Asia,EMEA,No
+Vanuatu,Oceania,APAC,No
+Vatican City State (Holy See),Europe,EMEA,No
+Venezuela,America,LATAM,No
+Vietnam,Asia,EMEA,No
+Virgin Islands (U.S.),America,LATAM,No
+Yemen,Asia,EMEA,No
+Zambia,Africa,EMEA,No
+Zimbabwe,Africa,EMEA,No
